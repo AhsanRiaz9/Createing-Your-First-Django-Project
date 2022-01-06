@@ -8,7 +8,7 @@ In this repo, you will learn how to create your first project in Django
 	Python3
 	Pip 
 
-# Verify it is installed or not, run below commands on cmd
+## Verify it is installed or not, run below commands on cmd
   	python --version
 	pip --version
 
@@ -71,6 +71,51 @@ Now it will run our django server with 9000
 	django-admin startapp myapp
 Now, Add 'myapp' in INSTALLED_APPS list of setting file of your project 'myapp'.
 
+## Create urls.py file in myapp directory and this code
+	from django.urls import path
+	from . import views
+
+	# URL endpoints for app
+	urlpatterns = [
+		
+	]
+	
+## Goto urls.py file of myproject directory
+First include from django.urls
+	from django.urls import path, include
+In urlpatterns of urls.py of myproject, type
+	path('myapp/',include('myapp.urls')),
+
+## Now goto urls.py of myapp, and write url pattern
+e.g:
+	path('',views.index)
+
+urls.py should look like:
+	from django.urls import path
+	from . import views
+
+	# URL endpoints for app
+	urlpatterns = [
+		path('',views.index)
+	]
+	
+
+## Goto views.py and write function
+	from django.shortcuts import render, HttpResponse
+
+	# Create your views here.
+	def index(request):
+		return HttpResponse("Hello World")
+		
+## Now goto, myproject directory and run the django server
+	python manage.py runserver
+## Open browser and type:
+open localhost:8000/myapp/ or 127.0.0.1:8000/myapp/
+
+## Now, page will show "Hello World"
+
+### Congratulation:
+You have done it. You have successfully created your first app in django.
 
 ## Copyright: Ahsan Riaz
 
