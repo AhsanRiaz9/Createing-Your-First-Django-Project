@@ -96,7 +96,7 @@ Now, Add 'myapp' in INSTALLED_APPS list of setting file of your project 'myapp'.
 		
 	]
 	
-## Goto urls.py file of myproject directory, first include from django.urls
+## Goto urls.py file of myproject directory, first import include from 'django.urls
 ![Img11](img/img11.PNG)	
 	from django.urls import path, include
 
@@ -134,5 +134,5 @@ open localhost:8000/myapp/ or 127.0.0.1:8000/myapp/
 ### Congratulation:
 You have done it. You have successfully created your first app in django.
 
-## Copyright: Ahsan Riaz
-
+# Copyright: Ahsan Riaz
+### Repo: https://github.com/AhsanRiaz9/Createing-Your-First-Django-Project
