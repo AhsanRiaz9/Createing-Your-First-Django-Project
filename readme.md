@@ -17,6 +17,7 @@ In this repo, you will learn how to create your first project in Django
 	Pip from https://pip.pypa.io/en/stable/installation/
 
 ## Get Started With Django first project
+Open vs code and type following commands on terminal:	
 	mkdir "Django Project"
 	cd "Django Project"
 
@@ -36,11 +37,11 @@ After enabling, run the following command
 	get-ExecutionPolicy 
 Now, it should give "remotesigned"
 
-## Now run the following command agains
+## Now run the following command again
 venv\Scripts\Activate 
 (now you can see (venv)) in your terminal
 
-## Installing Djanog
+## Installing Django
 	pip install django
 
 ## Creating Project
@@ -49,7 +50,7 @@ venv\Scripts\Activate
 ## Change Directory to your project
 	cd myproject
  
-## Run Djanog server 
+## Run Django server 
 	python manage.py runserver [port]
 Note: here port is optional, by default port is 8000
 
