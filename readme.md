@@ -87,8 +87,8 @@ Now it will run our django server with 9000
 Now, Add 'myapp' in INSTALLED_APPS list of setting file of your project 'myapp'.
 ![Img9](img/img9.PNG)
 
-## Create urls.py file in myapp directory and write this code
 ![Img10](img/img10.PNG)	
+## Create urls.py file in myapp directory and write this code
 	from django.urls import path
 	from . import views
 
