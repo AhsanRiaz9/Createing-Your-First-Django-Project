@@ -28,7 +28,7 @@ In this repo, you will learn how to create your first project in Django
 Note: Do Only if you face issue in creating virtualenv, run powershell as a admin
 ### Run following command
 	get-ExecutionPolicy 		
-if it give "restricted")
+if it give "restricted"
 ### Run the following command
 	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 Type 'Y' to enable
