@@ -40,19 +40,28 @@ Now, it should give "remotesigned"
 ## Now run the following command again
 venv\Scripts\Activate 
 (now you can see (venv)) in your terminal
+![Img1](img/img1.PNG)
+
 
 ## Installing Django
 	pip install django
+![Img2](img/img2.PNG)
 
 ## Creating Project
 	djagno-admin startproject myproject
 
 ## Change Directory to your project
 	cd myproject
+![Img3](img/img3.PNG)
+
+### Contents of myproject directory
+![Img4](img/img4.PNG)	
+![Img5](img/img5.PNG)
  
 ## Run Django server 
 	python manage.py runserver [port]
 Note: here port is optional, by default port is 8000
+![Img6](img/img6.PNG)
 
 ### Run:
 	start localhost:8000/
@@ -63,16 +72,22 @@ Now it will run our django server with 9000
 ### Run:	
 	start localhost:9000/
 	start 127.0.0.1:9000/
+![Img7](img/img7.PNG)
+
 	
 #### By defaul Django project admin panel, we can check it using
 	start localhost:8000/admin/
-
+![Admin](img/admin.PNG)
 
 ## Create App in django-project
 	django-admin startapp myapp
-Now, Add 'myapp' in INSTALLED_APPS list of setting file of your project 'myapp'.
+![Img8](img/img8.PNG)	
 
-## Create urls.py file in myapp directory and this code
+Now, Add 'myapp' in INSTALLED_APPS list of setting file of your project 'myapp'.
+![Img9](img/img9.PNG)
+
+## Create urls.py file in myapp directory and write this code
+![Img10](img/img10.PNG)	
 	from django.urls import path
 	from . import views
 
@@ -81,17 +96,18 @@ Now, Add 'myapp' in INSTALLED_APPS list of setting file of your project 'myapp'.
 		
 	]
 	
-## Goto urls.py file of myproject directory
-First include from django.urls
+## Goto urls.py file of myproject directory, first include from django.urls
+![Img11](img/img11.PNG)	
 	from django.urls import path, include
-In urlpatterns of urls.py of myproject, type
+
+### In urlpatterns of urls.py of myproject, type 
 	path('myapp/',include('myapp.urls')),
+![Img12](img/img12.PNG)
 
 ## Now goto urls.py of myapp, and write url pattern
-e.g:
 	path('',views.index)
 
-urls.py should look like:
+### urls.py should look like:
 	from django.urls import path
 	from . import views
 
@@ -114,7 +130,7 @@ urls.py should look like:
 open localhost:8000/myapp/ or 127.0.0.1:8000/myapp/
 
 ## Now, page will show "Hello World"
-
+![Img13](img/img13.PNG)
 ### Congratulation:
 You have done it. You have successfully created your first app in django.
 
