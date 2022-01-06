@@ -3,5 +3,5 @@ from . import views
 
 # URL endpoints for app
 urlpatterns = [
-    
+    path('',views.index)
 ]

@@ -1,4 +1,4 @@
-# Creating Your First Djanog Web Project App
+# Creating Your First Django Web Project App
 In this repo, you will learn how to create your first project in Django
 
 ## Tools: 
