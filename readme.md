@@ -17,9 +17,10 @@ In this repo, you will learn how to create your first project in Django
 	Pip from https://pip.pypa.io/en/stable/installation/
 
 ## Get Started With Django first project
-Open vs code and type following commands on terminal:	
 	mkdir "Django Project"
 	cd "Django Project"
+Open vs code and type above commands on terminal
+	
 
 ## Setup virtual environment:
 	python -m venv venv
