@@ -71,3 +71,6 @@ Now it will run our django server with 9000
 	django-admin startapp myapp
 Now, Add 'myapp' in INSTALLED_APPS list of setting file of your project 'myapp'.
 
+
+Copyright: Ahsan Riaz
+
